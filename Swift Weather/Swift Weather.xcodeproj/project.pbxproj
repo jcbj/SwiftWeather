@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495585711BECEB120049D428 /* Weather_backupground.png in Resources */ = {isa = PBXBuildFile; fileRef = 495585701BECEB120049D428 /* Weather_backupground.png */; };
+		495585731BECEDEA0049D428 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 495585721BECEDEA0049D428 /* background.png */; };
 		49C2446B1BEC10440049CC6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2446A1BEC10440049CC6E /* AppDelegate.swift */; };
 		49C2446D1BEC10440049CC6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2446C1BEC10440049CC6E /* ViewController.swift */; };
 		49C244701BEC10440049CC6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C2446E1BEC10440049CC6E /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		495585701BECEB120049D428 /* Weather_backupground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Weather_backupground.png; sourceTree = "<group>"; };
+		495585721BECEDEA0049D428 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		49C244671BEC10440049CC6E /* Swift Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C2446A1BEC10440049CC6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C2446C1BEC10440049CC6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				49C2446E1BEC10440049CC6E /* Main.storyboard */,
 				49C244711BEC10440049CC6E /* Assets.xcassets */,
 				49C244731BEC10440049CC6E /* LaunchScreen.storyboard */,
+				495585721BECEDEA0049D428 /* background.png */,
+				495585701BECEB120049D428 /* Weather_backupground.png */,
 				49C244761BEC10440049CC6E /* Info.plist */,
 			);
 			path = "Swift Weather";
@@ -123,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C244751BEC10440049CC6E /* LaunchScreen.storyboard in Resources */,
+				495585731BECEDEA0049D428 /* background.png in Resources */,
+				495585711BECEB120049D428 /* Weather_backupground.png in Resources */,
 				49C244721BEC10440049CC6E /* Assets.xcassets in Resources */,
 				49C244701BEC10440049CC6E /* Main.storyboard in Resources */,
 			);
@@ -284,6 +292,7 @@
 				49C2447B1BEC10440049CC6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
