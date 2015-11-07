@@ -45,9 +45,27 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
         if location.horizontalAccuracy > 0 {
             print(location.coordinate.latitude)
             print(location.coordinate.longitude)
-            
+            self.updateWeatherInfo(location.coordinate.latitude,longitude:location.coordinate.longitude)
             locationManger.stopUpdatingLocation()
         }
+    }
+    
+    func updateWeatherInfo(latitude:CLLocationDegrees,longitude:CLLocationDegrees) {
+        let manager = AFHTTPRequestOperationManager()
+        let url = "http://api.openweathermap.org/data/2.5/weather"
+        
+        let params = ["lat":latitude,"lon":longitude,"cnt":0]
+        
+        manager.GET(url,
+            parameters: params,
+            success: { (operation: AFHTTPRequestOperation!,
+                responseObject: AnyObject!) in
+                print("JSON: " + responseObject.description!)
+            },
+            failure: { (operation: AFHTTPRequestOperation!,
+                error: NSError!) in
+                print("Error: " + error.localizedDescription)
+        })
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {

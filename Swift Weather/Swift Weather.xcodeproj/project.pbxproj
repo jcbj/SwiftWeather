@@ -58,6 +58,7 @@
 		49C244711BEC10440049CC6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C244741BEC10440049CC6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C244761BEC10440049CC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E218201BED7E0900F4ED56 /* SwiftWeatherBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftWeatherBridgingHeader.h; sourceTree = "<group>"; };
 		7170F174F8FB93916E327D12 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AFEF98F5ABC41C3353E7F19E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,6 +136,7 @@
 				49C244731BEC10440049CC6E /* LaunchScreen.storyboard */,
 				497C55FF1BED72640071F30E /* background.png */,
 				49C244761BEC10440049CC6E /* Info.plist */,
+				49E218201BED7E0900F4ED56 /* SwiftWeatherBridgingHeader.h */,
 			);
 			path = "Swift Weather";
 			sourceTree = "<group>";
@@ -403,6 +405,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "VEEX.Swift-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Weather/SwiftWeatherBridgingHeader.h";
 			};
 			name = Debug;
 		};
@@ -415,6 +418,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "VEEX.Swift-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Weather/SwiftWeatherBridgingHeader.h";
 			};
 			name = Release;
 		};
